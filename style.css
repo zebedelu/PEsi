@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --highligh: #793bf6;
+  --realce: #6052a1;
+  --dark: #322d4a;
+  --shadow: #1d223b;
+
+  --links: #502bf5;
+  --background1: #e0e0e0;
+  --background: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus {
+  border: none;
+  line-height: 1.5; 
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--shadow);
+  min-height: 100vh;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* barra de navbar */
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    font-size: 24px;
+    font-style: bold;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .items {
+    display: flex;
+    * {
+      margin-inline: 5px;
+    }
+  }
+}
+
+/* a parte direita & esquerda */
+main {
+  display: flex;
+
+  flex: 1;
+  justify-content: center;
+  background-color: var(--shadow);
+  padding-block: 3%;
+
+  div {
+    justify-items: center;
+  }
+  /* parte esquerda */
+  .about-content {
+    max-width: 50%;
+    background-color: var(--background1);
+    border-radius: 30px 0 0 30px;
+    a {
+        text-decoration: underline;
+        color: var(--links);
+    }
+  }
+  /* parte direita */
+  .form-container {
+    max-width: 30%;
+    background-color: var(--background);
+    border-radius: 0 30px 30px 0;
+    form * {
+      border: none;
+    }
+  }
+}
+
+/* conteudo da parte direita & esquerda */
+.content {
+  align-content: center;
+  height: 100%;
+  width: 70%;
+  form {
+    width: 100%;
+    * {
+      width: 100%;
+    }
+    input {
+      background-color: transparent;
+      border-bottom: 1px solid black;
+    }
+  }
+  button {
+    padding: 25px;
+    padding-inline: 45%;
+    border: none;
+    border-radius: 60px;
+    background-color: var(--realce);
+    color: white;
+    font-size: 130%;
+    cursor: pointer;
+    transition: 0.1s ease;
+  }
+  button:hover {
+    scale: 1.01;
+  }
+  * {
+    margin-block: 25px;
+  }
+  h3 {
+    font-weight: normal;
+    text-align: center;
+    width: 80%;
+    a {
+      font-weight: bold;
+    }
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo * {
+  margin-inline: 20px;
+}
+
+/* Para caso precisar alterar o nome do projeto */
+.projecttitle::after {
+  content: "Digital Signage";
+}
+.projectimage::before {
+  content: url("https://www.google.com/favicon.ico");
+}
+
+
+/* temporario: apenas para as imagens */
+.imagem {
+  background-color: var(--highligh);
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin: 10px;
+  border-radius: 100%;
+}
+.circular-image {
+  background-color: var(--highligh);
+  width: 200px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
