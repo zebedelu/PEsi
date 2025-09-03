@@ -70,6 +70,7 @@ main {
 
   div {
     justify-items: center;
+    width: 30%;
   }
   /* parte esquerda */
   .about-content {
@@ -83,6 +84,7 @@ main {
   }
   /* parte direita */
   .form-container {
+    max-height: 60%;
     max-width: 30%;
     background-color: var(--background);
     border-radius: 0 30px 30px 0;
@@ -103,13 +105,15 @@ main {
       width: 100%;
     }
     input {
+      margin-block: 10%;
       background-color: transparent;
       border-bottom: 1px solid black;
+      margin-block: 15px;
     }
   }
   button {
     padding: 25px;
-    padding-inline: 45%;
+    width: 100%;
     border: none;
     border-radius: 60px;
     background-color: var(--realce);
@@ -144,6 +148,7 @@ main {
 /* Para caso precisar alterar o nome do projeto */
 .projecttitle::after {
   content: "Digital Signage";
+  white-space: nowrap;
 }
 .projectimage::before {
   content: url("https://www.google.com/favicon.ico");
@@ -153,14 +158,14 @@ main {
 /* temporario: apenas para as imagens */
 .imagem {
   background-color: var(--highligh);
-  width: 50px;
+  width: 15%;
   aspect-ratio: 1/1;
   margin: 10px;
   border-radius: 100%;
 }
 .circular-image {
   background-color: var(--highligh);
-  width: 200px;
+  width: 65%;
   border-radius: 100%;
   aspect-ratio: 1/1;
 }
