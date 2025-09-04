@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); */
 
 :root {
   --highligh: #793bf6;
@@ -96,6 +96,11 @@ main {
     .content > * {
       margin: 4px;
     }
+    .content h3 a {
+      color: var(--links);
+      text-decoration: underline;
+      font-weight: bolder;
+    }
   }
 }
 
@@ -114,6 +119,20 @@ main {
       border-bottom: 1px solid black;
       margin-block: 15px;
     }
+    input[type="submit"]:hover {
+      scale: 1.01;
+    }
+    input[type="submit"] {
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 60px;
+      background-color: var(--realce);
+      color: white;
+      font-size: 130%;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
     div {
       display: flex;
       div {
@@ -125,20 +144,6 @@ main {
         }
       }
     }
-  }
-  button {
-    padding: 25px;
-    width: 100%;
-    border: none;
-    border-radius: 60px;
-    background-color: var(--realce);
-    color: white;
-    font-size: 130%;
-    cursor: pointer;
-    transition: 0.1s ease;
-  }
-  button:hover {
-    scale: 1.01;
   }
   * {
     margin-block: 3px;

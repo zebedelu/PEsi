@@ -1,19 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-.about-content {
+@media (max-width: 880px) {
+  .about-content {
     display: none;
-}
-.form-container {
+  }
+  .form-container {
     border-radius: 15px 15px 15px 15px !important;
     max-width: 100% !important;
     width: 60% !important;
-}
-.onlyresponsive {
+  }
+  .onlyresponsive {
     display: block !important;
-}
-nav {
+  }
+  nav {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
+  }
+  .items {
+    display: none !important;
+  }
+  .form-container {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 680px) {
+  .about-content {
+    display: none;
+  }
+  .form-container {
+    border-radius: 15px 15px 15px 15px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .onlyresponsive {
+    display: block !important;
+  }
+  nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .items {
+    display: none !important;
+  }
+  .form-container {
+    margin-top: 100px;
+  }
 }
