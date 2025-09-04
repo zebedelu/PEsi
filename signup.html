@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="projecttitle"></title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="responsive.css"
-    />
+    <link rel="stylesheet" type="text/css" href="responsive.css" />
 
     <link rel="stylesheet" href="style.css" />
-  </head>
 
+    <link rel="stylesheet" href="header/header.css" />
+    <script src="header/header.js"></script>
+  </head>
   <body>
     <nav>
       <div class="logo">
@@ -33,7 +31,9 @@
     <main>
       <div class="about-content">
         <div class="content">
-          <div class="circular-image"><img class="projectimage" src="favicon.ico" /></div>
+          <div class="circular-image">
+            <img class="projectimage" src="favicon.ico" />
+          </div>
           <h1 class="projecttitle"></h1>
           <h3>Já tem uma conta? <a href="login.html">Entrar</a>.</h3>
           <h3>Que tal entender <a href="">como nós trabalhamos</a>?</h3>
@@ -44,30 +44,71 @@
         <div class="content">
           <h1>Bem-vindo</h1>
           <h3>Cadastre-se agora para usar o sistema</h3>
-          <form>
+          <form id="formulario" method="GET" action="confirm.html">
             <label>Nome de usuário</label><br />
-            <input type="text" name="name" /><br />
+            <input type="text" name="name" required /><br />
             <label>E-mail</label><br />
-            <input type="email" name="email" /><br />
+            <input type="email" name="email" required /><br />
             <div>
               <div>
                 <label>Senha</label><br />
-                <input type="password" name="paswd" /><br />
+                <input type="password" name="paswd" required /><br />
               </div>
               <div>
                 <label>Confirmar senha</label><br />
-                <input type="password" name="paswdconfirm" /><br />
+                <input type="password" name="paswdconfirm" required /><br />
               </div>
             </div>
             <label>CPF</label><br />
-            <input type="text" name="cpf" /><br />
+            <input type="number" name="cpf" required /><br />
             <label>Data de Aniversário</label><br />
-            <input type="password" name="birthday" /><br />
-            <input type="submit" value="Cadastrar">
+            <input type="date" name="birthday" required /><br />
+            <input type="submit" value="Cadastrar" id="submitform" />
           </form>
-          <h3 class="onlyresponsive">Já tem uma conta? <a href="login.html">Entrar</a>.</h3>
+          <h3 class="onlyresponsive">
+            Já tem uma conta? <a href="login.html">Entrar</a>.
+          </h3>
         </div>
       </div>
     </main>
+
+    <script>
+      // verificar se a senha é a mesma de verificar senha
+      document.getElementById("formulario").addEventListener("submit", (e) => {
+        if (
+          document.getElementsByName("paswd")[0].value !==
+          document.getElementsByName("paswdconfirm")[0].value
+        ) {
+          e.preventDefault();
+          alert("As senhas não coincidem!");
+          document.getElementsByName("paswd")[0].style.color = "red";
+          document.getElementsByName("paswdconfirm")[0].style.color = "red";
+
+          document
+            .getElementsByName("paswd")[0]
+            .parentElement.querySelector("label").style.color = "red";
+          document
+            .getElementsByName("paswdconfirm")[0]
+            .parentElement.querySelector("label").style.color = "red";
+        }
+      });
+
+      function setDefault() {
+        document.getElementsByName("paswd")[0].style.color = "black";
+        document.getElementsByName("paswdconfirm")[0].style.color = "black";
+        document
+          .getElementsByName("paswd")[0]
+          .parentElement.querySelector("label").style.color = "black";
+        document
+          .getElementsByName("paswdconfirm")[0]
+          .parentElement.querySelector("label").style.color = "black";
+      }
+      document
+        .getElementsByName("paswd")[0]
+        .addEventListener("input", setDefault);
+      document
+        .getElementsByName("paswdconfirm")[0]
+        .addEventListener("input", setDefault);
+    </script>
   </body>
 </html>

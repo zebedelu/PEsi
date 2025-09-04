@@ -22,6 +22,9 @@
   .form-container {
     margin-top: 100px;
   }
+  .confirm-container {
+    width: 100%;
+  }
 }
 @media (max-width: 680px) {
   .about-content {
