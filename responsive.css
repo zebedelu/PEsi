@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.about-content {
+    display: none;
+}
+.form-container {
+    border-radius: 15px 15px 15px 15px !important;
+    max-width: 100% !important;
+    width: 60% !important;
+}
+.onlyresponsive {
+    display: block !important;
+}
+nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
