@@ -5,25 +5,25 @@ document.addEventListener("DOMContentLoaded", ()=>{
         <img src="header/hamburguer.svg" />
         <div class="menubar">
           <div class="superior">
-            <img src="favicon.ico" />
+            <img src="images/favicon.ico" />
             <h1 class="projecttitle"></h1>
           </div>
           <div class="inferior">
             <div>
-              <img src="favicon.ico" />
+              <img src="images/favicon.ico" />
               <a href="">Home</a>
             </div>
             <div>
-              <img src="favicon.ico" />
+              <img src="images/favicon.ico" />
               <a href="">Sobre</a>
             </div>
             <div>
-              <img src="favicon.ico" />
-              <a href="">texto</a>
+              <img src="images/favicon.ico" />
+              <a href="">Página 1</a>
             </div>
             <div>
-              <img src="favicon.ico" />
-              <a href="">texto</a>
+              <img src="images/favicon.ico" />
+              <a href="">Página 2</a>
             </div>
           </div>
         </div>
