@@ -12,9 +12,11 @@
   }
   nav {
     position: absolute;
+    display: flex;
     left: 0;
     top: 0;
     width: 100%;
+    justify-content: space-between !important;
   }
   .items {
     display: none !important;
@@ -40,9 +42,11 @@
   }
   nav {
     position: absolute;
+    display: flex;
     left: 0;
     top: 0;
     width: 100%;
+    justify-content: space-between;
   }
   .items {
     display: none !important;

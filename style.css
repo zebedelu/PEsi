@@ -56,6 +56,12 @@ nav {
       margin-inline: 5px;
     }
   }
+  .menu {
+    margin-left: 20px;
+    > img {
+      scale: 2;
+    }
+  }
 }
 
 /* a parte direita & esquerda */
