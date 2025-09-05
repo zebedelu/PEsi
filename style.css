@@ -228,6 +228,45 @@ main {
       display: block;
     }
   }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    > * {
+      margin-block: 5px;
+      margin-left: 20%;
+    }
+    input[type="number"] {
+      height: 50px;
+      width: 60%;
+
+      padding: 15px;
+      border: 1px solid grey;
+      border-radius: 2px;
+      background-color: var(--background);
+      color: black;
+      font-size: 130%;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
+    input[type="submit"]:hover {
+      scale: 1.01;
+    }
+    input[type="submit"] {
+      margin-top: 30px;
+      height: 50px;
+      width: 60%;
+
+      padding: 15px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      background-color: var(--realce);
+      font-size: 130%;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
+  }
 }
 
 .imagem {
