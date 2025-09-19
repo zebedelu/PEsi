@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widp=device-widp, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="header/header.css" />
+  </head>
+  <body>
+		<nav class="navbar2">
+			<a>Sobre nós</a>
+			<p>|</p>
+			<a>Conhecer a ferramenta</a>
+			<p>|</p>
+			<a>Encarregaos</a>
+			<p>|</p>
+			<a>Github</a>
+		</nav>
+    <main>
+      <div class="left-painel">
+        <div class="logo"><img src="images/logo.png" /></div>
+        <div class="botoes">
+          <div class="cima">
+            <div class="botao">
+              <img src="images/USB.png" />
+              <p>Conexões</p>
+            </div>
+            <div class="botao">
+              <img src="images/playlist.svg" />
+              <a href="playlists.html">Playlists</a>
+            </div>
+          </div>
+          <div class="baixo">
+            <div class="botao">
+              <img src="" />
+              <p>Documentação</p>
+            </div>
+            <div class="botao">
+              <img src="" />
+              <p>Sobre a ferramenta</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-painel">
+        <div class="information">
+          <div>
+            <img src="images/rasperry.webp" />
+            <p><span id="CountDispositivo">X</span> Dispositivos</p>
+          </div>
+          <div>
+            <img src="images/rasperry.webp" />
+            <p><span id="CountDispOnline">X</span> Onlines</p>
+          </div>
+          <div>
+            <img src="images/rasperry.webp" />
+            <p><span id="CountDispOffline">X</span> Offlines</p>
+          </div>
+          <!-- <button id="newdisp">Novo Dipositivo
+            <img src="images/plus.svg" />
+          </button> -->
+          <button id="newplaylist">Nova Playlist
+            <img src="images/plus.svg" />
+          </button>
+          <button class="disabled">Aplicar</button>
+        </div>
+        <div class="main">
+          <p>Todos os Dispositivos</p>
+          <div class="dispositivos" id="dispositivos">
+            <div class="linha-info">
+              <div><img src=""></div>
+              <div><p>Nome</p></div>
+              <div><p>Descrição</p></div>
+              <div><p>Status</p></div>
+              <div><p>Playlist</p></div>
+              <div><p>#</p></div>
+            </div>
+            <!-- 
+            as playlists ficam aqui, copie o "copy-dispositivo"
+            dependendo de quantos dispositivos tiver, um para cada,
+            e remova o ID do elemento ao copia-lo,
+            exemplo logo abaixo-->
+            <div class="linha" id="copy-dispositivo">
+              <div><img src="images/rasperry.webp"></div>
+              <div><p id="name">Lorem</p></div>
+              <div><p id="locali">ipsum</p></div>
+              <div><p id="status">dolor</p></div>
+              <div>
+                <select class="selectplaylist">
+                    <option>Esporte 1</option>
+                    <option>Playlist da Cozinha</option>
+                    <option selected>Nenhum</option>
+                </select>
+              </div>
+              <div><p id="idnumber">1</p></div>
+            </div>
+            <div class="linha">
+              <div><img src="images/rasperry.webp"></div>
+              <div><p id="name">Lorem</p></div>
+              <div><p id="locali">ipsum</p></div>
+              <div><p id="status">dolor</p></div>
+              <div>
+                <select class="selectplaylist">
+                    <option selected>Esporte 1</option>
+                    <option>Playlist da Cozinha</option>
+                    <option>Nenhum</option>
+                </select>
+              </div>
+              <div><p id="idnumber">1</p></div>
+            </div>
+            <div class="linha">
+              <div><img src="images/rasperry.webp"></div>
+              <div><p id="name">Lorem</p></div>
+              <div><p id="locali">ipsum</p></div>
+              <div><p id="status">dolor</p></div>
+              <div>
+                <select class="selectplaylist">
+                    <option>Esporte 1</option>
+                    <option selected>Playlist da Cozinha</option>
+                    <option>Nenhum</option>
+                </select>
+              </div>
+              <div><p id="idnumber">2</p></div>
+            </div>
+            <div class="linha">
+              <div><img src="images/rasperry.webp"></div>
+              <div><p id="name">Lorem</p></div>
+              <div><p id="locali">ipsum</p></div>
+              <div><p id="status">dolor</p></div>
+              <div>
+                <select class="selectplaylist">
+                    <option>Esporte 1</option>
+                    <option>Playlist da Cozinha</option>  
+                    <option selected>Nenhum</option>
+                </select>
+              </div>
+              <div><p id="idnumber">3</p></div>
+            </div>
+          </table>
+        </div>
+        <div class="bottom">
+          <div class="skip">
+            <button><</button>
+            <p>1</p>
+            <button>></button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="AddDispositivo" style="display: none;">
+      <div class="blackscreen">
+        <h1>Adicionar Dispositivo</h1>
+        <form>
+          <label for="nome">Nome</label>
+          <input type="text" maxlength="30" name="nome" placeholder="Nome do dispositivo" required>
+          <label for="desc">Descrição</label>
+          <input type="text" maxlength="30" name="desc" placeholder="Insira uma descrição" required>
+          <label for="playlist">Playlist</label>
+          <select required>
+            <option value="">Selecione uma playlist</option>
+            <option value="Esporte 1">Esporte 1</option>
+            <option value="TV primária">TV primária</option>
+            <option value="Shopping">Shopping</option>
+          </select>
+          <div>
+            <button class="cancelar" id="cancelPlaylist">Cancelar</button>
+            <button class="confirm" id="createPlaylist">Confirmar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="js/dashboard.js"></script>
+  <script>
+    document.getElementById("newplaylist").addEventListener("click",()=>{
+      window.location.href = "playlistconfig.html"
+    })
+  </script>
+</html>

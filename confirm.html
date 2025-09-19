@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="projecttitle"></title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="responsive.css" />
-    <script src="confirm.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <script src="js/confirm.js"></script>
   </head>
 
   <body>
     <main>
-      <div class="confirm-container">
+      <div class="normal-container confirm">
         <h1>Pronto! Verifique seu e-mail para começar</h1>
         <p id="emailtext">Um código de 6 digitos foi enviado à<br><strong>emailsuperoficial@iorgute.net</strong></p>
         <p>O código expira em 5 minutos</p>
         <form>
-          <label><strong>Insira seu código de 6 dígitos</strong></label>
-          <input type="number" minlength="0" maxlength="6">
-          <label>Não recebeu nenhum código? <a href="">Re-enviar Código</a></label>
-          <input type="submit" value="Verificar">
+          <label for="code"><strong>Insira seu código de 6 dígitos</strong></label>
+          <input id="Code" type="number" maxlength="6" value="000000" name="code">
+          <label for="submit">Não recebeu nenhum código? <a href="">Re-enviar Código</a></label>
+          <input type="submit" value="Verificar" name="submit">
         </form>
       </div>
     </main>
   </body>
+  <script>
+  </script>
 </html>

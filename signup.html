@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="projecttitle"></title>
-    <link rel="stylesheet" type="text/css" href="responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <link rel="stylesheet" href="header/header.css" />
     <script src="header/header.js"></script>
@@ -14,8 +14,7 @@
   <body>
     <nav>
       <div class="logo">
-        <div class="imagem"><img class="projectimage" src="images/favicon.ico" /></div>
-        <h1 class="projecttitle"></h1>
+        <img class="projectimage" src="images/biglogo.png" />
       </div>
       <div class="items">
         <a href="">Sobre nós</a>
@@ -31,10 +30,7 @@
     <main>
       <div class="about-content">
         <div class="content">
-          <div class="circular-image">
-            <img class="projectimage" src="images/favicon.ico" />
-          </div>
-          <h1 class="projecttitle"></h1>
+          <img class="circular-image" src="images/logo.png" />
           <h3>Já tem uma conta? <a href="login.html">Entrar</a>.</h3>
           <h3>Que tal entender <a href="">como nós trabalhamos</a>?</h3>
         </div>
@@ -63,14 +59,21 @@
               </div>
             </div>
             <label>CPF</label><br />
-            <input type="number" name="cpf" required /><br />
-            <label>Data de Aniversário</label><br />
+            <input type="text" id="cpf" name="cpf"
+                  pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                  placeholder="000.000.000-00"
+                  title="Digite o CPF no formato 000.000.000-00"
+                  required>
+            <label>Data de Nascimento</label><br />
             <input type="date" name="birthday" required /><br />
             <input type="submit" value="Cadastrar" id="submitform" />
           </form>
         </div>
       </div>
     </main>
+    <div id="usermessage">
+        <h2>Cadastrado com sucesso!</h2>
+    </div>
 
     <script>
       // verificar se a senha é a mesma de verificar senha

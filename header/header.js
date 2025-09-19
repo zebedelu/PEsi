@@ -1,3 +1,10 @@
+function MensagemParaUser() {
+  document.getElementById("usermessage").style.animation = "aparecer 5s ease 1";
+  setTimeout(()=>{
+    document.getElementById("usermessage").style.animation = "";
+  },5000)
+}
+
 document.addEventListener("DOMContentLoaded", ()=>{
     document.querySelector("nav").insertAdjacentHTML("afterbegin",
     `

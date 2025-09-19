@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="widp=device-widp, initial-scale=1.0" />
+		<title>Dashboard</title>
+		<link rel="stylesheet" href="css/playlistsconfig.css" />
+		<link rel="stylesheet" href="header/header.css" />
+	</head>
+	<body>
+		<nav class="navbar2">
+			<a>Sobre nós</a>
+			<p>|</p>
+			<a>Conhecer a ferramenta</a>
+			<p>|</p>
+			<a>Encarregaos</a>
+			<p>|</p>
+			<a>Github</a>
+		</nav>
+		<main>
+			<div class="left-painel">
+				<div class="logo"><img src="images/logo.png" /></div>
+				<div class="botoes">
+					<div class="cima">
+						<div class="botao">
+							<img src="images/USB.png" />
+							<a href="conections.html">Conexões</a>
+						</div>
+						<div class="botao">
+							<img src="images/playlist.svg" />
+							<a href="playlists.html">Playlists</a>
+						</div>
+					</div>
+					<div class="baixo">
+						<div class="botao">
+							<img src="" />
+							<p>Documentação</p>
+						</div>
+						<div class="botao">
+							<img src="" />
+							<p>Sobre a ferramenta</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-painel">
+				<div class="title" style="display: none">
+					<h1>Playlists</h1>
+					<div class="search">
+						<img src="images/search.svg" />
+						<input placeholder="Procurar por playlist" />
+					</div>
+				</div>
+				<div class="main">
+					<div class="titlemain">
+						<div>
+							<h1>Configurar <span>{ PlaylistName }</span></h1>
+						</div>
+						<div>
+							<button id="addfile">
+								<p>Carregar arquivo</p>
+								<img src="images/plus.svg" />
+							</button>
+							<button id="associarPlaylist">
+								<p>Associar Playlist</p>
+								<img src="images/link.svg" />
+							</button>
+							<button id="associarPlaylist">
+								<p>Salvar Playlist</p>
+								<img src="images/save.svg" />
+							</button>
+							<button><img src="images/trash.svg" /></button>
+						</div>
+					</div>
+					<div class="playlists">
+						<div class="linha-info">
+							<input
+								type="checkbox"
+								onchange="
+                Array.from(document.getElementsByClassName('linha')).forEach(element => {
+                  element.querySelector('input').checked = this.checked;
+                });"
+							/>
+							<div><p>Nome</p></div>
+							<div><p>Descrição</p></div>
+							<div><p>Data de Adição</p></div>
+							<div><p>Duração</p></div>
+						</div>
+						<!-- a mesma coisa dita no comentario acima do elemento do ID "copy-dispositivo" no arquivo conections.html
+             a única diferença é que é para a playlist -->
+						<div class="linha" id="copy-file">
+							<input type="checkbox" />
+							<div><p id="namevideo">Video1.mp4</p></div>
+							<div><p>Bem vindo ao povo</p></div>
+							<div><p>XX/XX/XXXX</p></div>
+							<div><p>0:03</p></div>
+						</div>
+						<div class="linha">
+							<input type="checkbox" />
+							<div><p id="namevideo">Video1.mp4</p></div>
+							<div><p>Bem vindo ao povo</p></div>
+							<div><p>XX/XX/XXXX</p></div>
+							<div><p>0:03</p></div>
+						</div>
+						<div class="linha">
+							<input type="checkbox" />
+							<div><p id="namevideo">Black Screen.png</p></div>
+							<div><p>Transição Magnifica</p></div>
+							<div><p>XX/XX/XXXX</p></div>
+							<div><p>0:03</p></div>
+						</div>
+						<div class="linha">
+							<input type="checkbox" />
+							<div><p id="namevideo">Whatzapp Web 123-456-789-999-999-999-999-999</p></div>
+							<div><p>Video pego do zap</p></div>
+							<div><p>XX/XX/XXXX</p></div>
+							<div><p>0:03</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div id="associarPlaylistMSG" style="display: none">
+			<div class="blackscreen">
+				<p>Associe essa playlist aos seus dispositivos</p>
+				<div class="dispositivos">
+					<div class="linha-info">
+						<div><p>Nome</p></div>
+						<div>
+							<input
+								type="checkbox"
+								onchange="
+                Array.from(document.getElementsByClassName('linha2')).forEach(element => {
+                  element.querySelector('input').checked = this.checked;
+                });"
+							/>
+						</div>
+					</div>
+					<!-- a mesma coisa dita no comentario acima do elemento do ID "copy-dispositivo" no arquivo conections.html-->
+					<div class="linha2" id="copy-dispositivo">
+						<div><p>Lorem Ipsum</p></div>
+						<div>
+							<input type="checkbox" />
+						</div>
+					</div>
+					<div class="linha2">
+						<div><p>Lorem Ipsum1</p></div>
+						<div>
+							<input type="checkbox" />
+						</div>
+					</div>
+					<div class="linha2">
+						<div><p>Lorem Ipsum2</p></div>
+						<div>
+							<input type="checkbox" />
+						</div>
+					</div>
+					<div class="linha2">
+						<div><p>Lorem Ipsum3</p></div>
+						<div>
+							<input type="checkbox" />
+						</div>
+					</div>
+				</div>
+				<div>
+					<button class="cancelar" id="cancelAssociate">Cancelar</button>
+					<button class="confirm" id="AssociatePlaylist">Confirmar</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/playlistconfig.js"></script>
+</html>

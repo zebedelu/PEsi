@@ -1,0 +1,287 @@
+* {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    overflow-y: hidden;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+    border-radius: 2px;
+    justify-content: center;
+    margin: 5px 5px 0px 5px;
+    h1 {
+        padding-block: 10px;
+        font-size: 130%;
+        font-weight: lighter;
+        letter-spacing: 1px;
+    }
+}
+
+main {
+    display: flex;
+    height: calc(100% - 60px);
+}
+
+.left-painel {
+    border-radius: 10px;
+    margin: 5px 10px 5px 5px;
+    width: 20%;
+    background-color: var(--background1);
+    display: flex;
+    flex-direction: column;
+    .botoes {
+        flex: 1;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .botao:hover {
+        filter: brightness(90%);
+    }
+    .logo { 
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        img {
+            margin: 10px;
+            aspect-ratio: 1/1;
+        }
+    }
+    .botao {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        flex: 1;
+        background-color: var(--background);
+        margin-right: 25px;
+        margin-block: 15px;
+        border-radius: 0 20px 20px 0;
+        * {
+            margin-left: 8%;
+            font-size: 100%;
+            height: 80%;
+            align-content: center;
+            font-size: 130%;
+        }
+    }
+}
+.right-painel {
+    flex: 1;
+    margin: 5px 5px 5px 0px;
+    border-radius: 10px;
+    background-color: var(--background1);
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-weight: normal;
+    }
+    >*{
+        margin-inline: 20px;
+    }
+    .title > * {
+        margin-block: 20px;
+    }
+    .search {
+        background-color: white;
+        width: 25%;
+        height: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 15px;
+        input {
+            background-color: transparent;
+            height: 100%;
+            width: 70%;
+            border: none;
+        }
+        img {
+            height: 100%;
+        }
+    }
+    .titlemain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+        button {
+            display: flex;
+            border: none;
+            margin: 10px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        #associarPlaylist, #addfile {
+            background-color: var(--second);
+            color: white;
+            padding-inline: 30px;
+            p {
+                margin-right: 20px;
+                font-size: 120%;
+                flex: 1;
+            }
+            img {
+                scale: 1.2;
+            }
+        }
+    }
+    .playlists {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: var(--background4);
+        .linha {
+            margin-block: 5px;
+            display: flex;
+            background-color: var(--background3);
+            align-items: center;
+            border-radius: 10px;
+            padding-block: 15px;
+            input {
+                width: 20px;
+                height: 20px;
+                margin-inline: 20px;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                #namevideo {
+                    text-align: center;
+                    white-space: nowrap;       /* tudo em uma linha só */
+                    overflow: hidden;          /* corta o excesso */
+                    text-overflow: ellipsis;   /* coloca "..." no final */
+                    width: 250px;              /* define a largura da área */
+                }
+            }
+        }
+        .linha-info {
+            background-color: var(--background1);
+            display: flex;
+            align-items: center;
+            input {
+                width: 20px;
+                height: 20px;
+                margin-inline: 20px;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                flex: 1;
+            }
+        }
+    }
+}
+select {
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+}
+.botao {
+    cursor: pointer;
+}
+
+#associarPlaylistMSG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    .blackscreen {
+        position: absolute;
+        background-color: var(--background1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        >*{
+            margin: 10px;
+            margin-inline: 80px;
+        }
+        p {
+            font-size: 150%;
+        }
+        .cancelar {
+            background-color: grey;
+        }
+        .confirm {
+            background-color: var(--second);
+        }
+        button:hover {
+            background-color: var(--background1);
+        }
+        button {
+            transition: 0.2s ease;
+            padding: 15px;
+            padding-inline: 30px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 120%;
+            margin-inline: 10px;
+            flex: 1;
+        }
+        .dispositivos {
+            background-color: var(--background);
+            width: 95%;
+            .linha2, .linha-info {
+                background-color: var(--background3);
+                margin: 5px;
+                padding-block: 10px;
+                display: flex;
+                justify-content: space-evenly;
+                > div {
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    input {
+                        height: 20px;
+                        width: 20px;
+                        margin-left: auto;
+                        margin-right: 50px;
+                    }
+                }
+            }
+            .linha-info {
+                padding-block: 5px;
+            }
+            #copy-dispositivo {
+                display: none;
+            }
+        }
+    }
+}
+
+#copy-file {
+    display: none;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #4f46e5; /* cor personalizada para indicar foco */
+  border-radius: 4px;
+}
