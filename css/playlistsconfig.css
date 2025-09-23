@@ -147,11 +147,15 @@ main {
         display: flex;
         flex-direction: column;
         flex: 1;
-        background-color: var(--background4);
-        .linha {
+        > p {
+            align-self: center;
             margin-block: 5px;
+            font-weight: bold;
+        }
+        .linha {
+            margin-block: 2px;
             display: flex;
-            background-color: var(--background3);
+            background-color: var(--background2);
             align-items: center;
             border-radius: 10px;
             padding-block: 15px;
@@ -177,6 +181,7 @@ main {
             background-color: var(--background1);
             display: flex;
             align-items: center;
+            margin-block: 10px;
             input {
                 width: 20px;
                 height: 20px;

@@ -178,7 +178,7 @@ main {
             .linha {
                 white-space: nowrap;
                 background-color: var(--background2);
-                margin-block: 5px;
+                margin-block: 2px;
                 margin-inline: 5px;
                 border-radius: 10px;
                 justify-content: space-around;

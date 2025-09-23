@@ -148,11 +148,11 @@ main {
         display: flex;
         flex-direction: column;
         flex: 1;
-        background-color: var(--background4);
+        background-color: transparent;
         .linha {
-            margin-block: 5px;
+            margin-block: 2px;
             display: flex;
-            background-color: var(--background3);
+            background-color: var(--background2);
             align-items: center;
             border-radius: 10px;
             padding-block: 15px;
@@ -168,7 +168,8 @@ main {
                 flex: 1;
             }
             button {
-                margin-inline: 10px;
+                margin-inline: 20px;
+                scale: 1.7;
                 border: none;
                 background-color: transparent;
             }

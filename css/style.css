@@ -100,17 +100,9 @@ main {
   align-content: center;
   height: 100%;
   width: 70%;
-  .recoverpass {
-    display: flex;
-    align-self: center;
-    color: var(--links);
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 90%;
-  }
   .circular-image {
     display: flex;
-    width: 60%;
+    width: 120%;
     align-self: start;
   }
   form {
@@ -184,11 +176,7 @@ main {
 }
 
 .confirm {
-  padding-block: 20px;
   form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     input[type="number"] {
       height: 50px;
       width: 60%;
@@ -209,7 +197,7 @@ main {
 
 .normal-container {
   border-radius: 15px;
-  background-color: #fff;
+  background-color: var(--background2);
   width: 50%;
   max-height: 50%;
 
@@ -264,6 +252,7 @@ main {
     flex-direction: column;
     > * {
       margin-block: 5px;
+      margin-left: 10%;
     }
     input[type="submit"]:hover {
       scale: 1.01;
@@ -297,27 +286,7 @@ main {
 
 .passrecover {
   width: 40%;
-  height: 100%;
-  padding-block: 50px;
-  form {  
-    margin-left: 25%;
-    input[type="submit"]:hover {
-      scale: 1.01;
-    }
-    input[type="submit"] {
-      margin-top: 30px;
-      height: 50px;
-      width: 80%;
-
-      padding: 15px;
-      border: none;
-      border-radius: 20px;
-      color: white;
-      background-color: var(--realce);
-      font-size: 130%;
-      cursor: pointer;
-      transition: 0.1s ease;
-    }
+  form {
     input[type="email"] {
       
       height: 50px;
@@ -329,7 +298,7 @@ main {
       border-bottom: 3px solid black;
       border-radius: 5px;
 
-      background-color: var(--background1);
+      background-color: var(--background);
       color: black;
       font-size: 130%;
       cursor: pointer;
