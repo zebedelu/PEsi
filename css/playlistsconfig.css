@@ -47,7 +47,8 @@ main {
         flex-direction: column;
         justify-content: space-between;
         .cima a, .cima p {
-           color: var(--links);
+            text-decoration: none;
+            color: black;
         }
     }
     .botao:hover {
