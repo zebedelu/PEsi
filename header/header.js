@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         <img src="header/hamburguer.svg" />
         <div class="menubar">
           <div class="superior">
-            <img src="images/favicon.ico" />
+            <img src="images/others/favicon.ico" />
             <h1 class="projecttitle"></h1>
           </div>
           <div class="inferior">

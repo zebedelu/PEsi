@@ -102,7 +102,7 @@ main {
   width: 70%;
   .circular-image {
     display: flex;
-    width: 120%;
+    width: 70%;
     align-self: start;
   }
   form {
@@ -175,30 +175,10 @@ main {
   white-space: nowrap;
 }
 
-.confirm {
-  form {
-    input[type="number"] {
-      height: 50px;
-      width: 60%;
-
-      padding: 15px;
-      border: 1px solid grey;
-      border-radius: 2px;
-      background-color: var(--background);
-      color: black;
-      font-size: 130%;
-      cursor: pointer;
-      text-align: center;
-      letter-spacing: 30px;
-      transition: 0.1s ease;
-    }
-  }
-}
-
 .normal-container {
   border-radius: 15px;
   background-color: var(--background2);
-  width: 50%;
+  width: 40%;
   max-height: 50%;
 
   display: flex;
@@ -252,7 +232,6 @@ main {
     flex-direction: column;
     > * {
       margin-block: 5px;
-      margin-left: 10%;
     }
     input[type="submit"]:hover {
       scale: 1.01;
@@ -284,9 +263,37 @@ main {
   }
 }
 
+.confirm {
+  align-self: center;
+  height: 40%;
+  padding-block: 50px;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type="number"] {
+      height: 50px;
+      width: 60%;
+
+      padding: 15px;
+      border: 1px solid grey;
+      border-radius: 2px;
+      background-color: var(--background);
+      color: black;
+      font-size: 130%;
+      cursor: pointer;
+      text-align: center;
+      letter-spacing: 30px;
+      transition: 0.1s ease;
+    }
+  }
+}
+
 .passrecover {
   width: 40%;
   form {
+    display: flex;
+    align-items: center;
     input[type="email"] {
       
       height: 50px;
