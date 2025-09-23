@@ -46,6 +46,9 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        .cima a, .cima p {
+           color: var(--links);
+        }
     }
     .botao:hover {
         filter: brightness(90%);
