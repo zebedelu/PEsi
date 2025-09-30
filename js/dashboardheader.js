@@ -1,27 +1,23 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     document.querySelector("body").insertAdjacentHTML("afterbegin",
-    `
-    <nav class="navbar2">
-		<a>Sobre nós</a>
-		<p>|</p>
-		<a>Conhecer a ferramenta</a>
-		<p>|</p>
-		<a>Encarregaos</a>
-		<p>|</p>
-		<a>Github</a>
-	</nav>
-    `)
+      `
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-HK5fgLBL+x+fKj3F8fFvS1QkQOQWwNn0xSTy5Av1k6R+eCzE7a7uOB3Mo6wyiQpVYqovsnDzt8cF2VZ9PpJ0Gw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />`
+    )
     document.querySelector("main").insertAdjacentHTML("afterbegin",
     `
       <div class="left-painel">
-        <div class="mini-profile">
+        <div class="mini-profilelogo">
             <div>
                 <img src="https://www.google.com/favicon.ico">
                 <p id="user_name">UserName</p>
             </div>
-            <div>
-                <img src="https://www.google.com/favicon.ico">
-            </div>
+            <i class="fa-solid fa-gear"></i>
         </div>
         <div class="botoes">
           <div class="cima">

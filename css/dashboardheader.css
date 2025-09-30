@@ -27,16 +27,23 @@
     .botao:hover {
         filter: brightness(90%);
     }
-    .mini-profile {
+    .mini-profilelogo {
         display: flex;
-        margin: 5px;
+        margin: 10px;
+        margin-inline: 20px;
         font-weight: bolder;
+        align-items: center;
         div {
-            align-items: center;
+            flex: 1;
             display: flex;
+            align-items: center;
         }
-        * {
-            margin: 5px;
+        p {
+            margin-left: 15px;
+            font-size: 100%;
+        }
+        img {
+            height: 50px;
         }
     }
     .logo {
