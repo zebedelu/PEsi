@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         <div class="mini-profile">
             <div>
                 <img src="https://www.google.com/favicon.ico">
-                <p>UserName</p>
+                <p id="user_name">UserName</p>
             </div>
             <div>
                 <img src="https://www.google.com/favicon.ico">
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         <div class="botoes">
           <div class="cima">
             <div class="botao">
-              <a href="conections.html">Conexões</a>
+              <a href="dashboard.html">Conexões</a>
             </div>
             <div class="botao">
               <a href="playlists.html">Playlists</a>

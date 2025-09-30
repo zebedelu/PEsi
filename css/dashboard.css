@@ -253,3 +253,7 @@ button {
         }
     }
 }
+
+#user_name::after {
+    content: "a";
+}
