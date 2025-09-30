@@ -6,6 +6,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+main {
+    display: flex;
+    height: 100%;
+}
+
 .left-painel {
     border-radius: 10px;
     margin: 5px 10px 5px 5px;
@@ -42,8 +47,12 @@
             margin-left: 15px;
             font-size: 100%;
         }
-        img {
+        img, svg {
             height: 50px;
+        }
+        svg {
+            cursor: pointer;
+            scale: 0.8;
         }
     }
     .logo {

@@ -28,11 +28,6 @@ nav {
     }
 }
 
-main {
-    display: flex;
-    height: calc(100% - 60px);
-}
-
 .right-painel {
     flex: 1;
     margin: 5px 5px 5px 0px;
@@ -254,6 +249,25 @@ button {
     }
 }
 
-#user_name::after {
-    content: "a";
+#status {
+    font-weight: bolder;
+}
+.offline {
+    display: flex;
+    background-color: rgb(247, 70, 70);
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.online {
+    display: flex;
+    background-color: rgb(99, 203, 99);
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 30%;
+    border-radius: 10px;
 }
