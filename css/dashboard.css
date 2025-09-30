@@ -33,55 +33,6 @@ main {
     height: calc(100% - 60px);
 }
 
-.left-painel {
-    border-radius: 10px;
-    margin: 5px 10px 5px 5px;
-    width: 20%;
-    background-color: var(--background1);
-    display: flex;
-    flex-direction: column;
-    .botoes {
-        flex: 1;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .cima a, .cima p {
-            text-decoration: none;
-            color: black;
-        }
-    }
-    .botao:hover {
-        filter: brightness(90%);
-    }
-    .logo {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: center;
-        img {
-            margin: 10px;
-            aspect-ratio: 1/1;
-        }
-    }
-    .botao {
-        display: flex;
-        align-items: center;
-        height: 50px;
-        flex: 1;
-        background-color: var(--background);
-        margin-right: 25px;
-        margin-block: 15px;
-        border-radius: 0 20px 20px 0;
-        * {
-            margin-left: 8%;
-            font-size: 100%;
-            height: 80%;
-            align-content: center;
-            font-size: 130%;
-        }
-    }
-}
 .right-painel {
     flex: 1;
     margin: 5px 5px 5px 0px;
