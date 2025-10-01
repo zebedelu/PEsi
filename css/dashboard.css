@@ -58,11 +58,6 @@ nav {
             height: 50px;
             font-size: 100%;
         }
-        .newplaylist {
-            display: flex;
-            justify-self: end;
-            align-self: end;
-        }
         img {
             height: 40px;
         }
@@ -155,10 +150,6 @@ select {
 button {
     cursor: pointer;
 }
-.botao {
-    cursor: pointer;
-}
-
 #copy-dispositivo {
     display: none;
 }

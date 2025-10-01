@@ -148,10 +148,6 @@ select {
 button {
     cursor: pointer;
 }
-.botao {
-    cursor: pointer;
-}
-
 #copy-dispositivo {
     display: none;
 }

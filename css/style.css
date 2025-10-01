@@ -44,12 +44,6 @@ nav {
       margin-inline: 5px;
     }
   }
-  .menu {
-    margin-left: 20px;
-    > img {
-      scale: 2;
-    }
-  }
 }
 
 /* a parte direita & esquerda */
@@ -317,12 +311,6 @@ main {
   }
 }
 
-.imagem {
-  width: 15%;
-  margin: 10px;
-  border-radius: 100%;
-  aspect-ratio: 1/1;
-}
 .onlyresponsive {
   display: none;
 }

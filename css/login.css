@@ -44,6 +44,12 @@ nav {
       margin-inline: 5px;
     }
   }
+  .menu {
+    margin-left: 20px;
+    > img {
+      scale: 2;
+    }
+  }
 }
 
 /* a parte direita & esquerda */
@@ -157,7 +163,7 @@ main {
   justify-content: end;
   padding-inline: 10px;
   padding-block: 5px;
-  img {
+  h1 {
     width: 300px;
     margin: 10px;
   }
@@ -311,6 +317,12 @@ main {
   }
 }
 
+.imagem {
+  width: 15%;
+  margin: 10px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
 .onlyresponsive {
   display: none;
 }

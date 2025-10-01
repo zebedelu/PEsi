@@ -159,10 +159,6 @@ select {
 button {
     cursor: pointer;
 }
-.botao {
-    cursor: pointer;
-}
-
 #associarPlaylistMSG {
     position: absolute;
     left: 0;
