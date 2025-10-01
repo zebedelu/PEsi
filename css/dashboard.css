@@ -39,24 +39,29 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
         background-color: transparent;
-        > * {
-            display: flex;
-            flex: 1;
-            padding: 10px;
-            margin: 10px;
-            align-items: center;
-            justify-content: space-evenly;
+        p {
+            margin-left: 30px;
         }
         button {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
             background-color: var(--second);
             justify-content: space-around;
             border: none;
+            margin: 15px;
+            padding: 10px;
+            padding-inline: 20px;
             border-radius: 10px;
             color: var(--background);
             height: 50px;
             font-size: 100%;
+        }
+        .newplaylist {
+            display: flex;
+            justify-self: end;
+            align-self: end;
         }
         img {
             height: 40px;
@@ -101,9 +106,6 @@ nav {
             display: flex;
             flex-direction: column;
             flex: 1;
-            .selectplaylist:focus {
-                border: none;
-            }
             .selectplaylist {
                 height: 70%;
                 width: 70%;

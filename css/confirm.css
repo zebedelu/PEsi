@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* barra de navbar */
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    font-size: 24px;
+    font-style: bold;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .items {
+    display: flex;
+    * {
+      margin-inline: 5px;
+    }
+  }
+  .menu {
+    margin-left: 20px;
+    > img {
+      scale: 2;
+    }
+  }
+}
+
+/* a parte direita & esquerda */
+main {
+  display: flex;
+
+  flex: 1;
+  justify-content: center;
+  background: radial-gradient(circle at 50% -200%, #502bf5 0%, #1D223B 100%);
+  padding-block: 3%;
+
+  div {
+    justify-items: center;
+    width: 30%;
+  }
+  /* parte esquerda */
+  .about-content {
+    max-width: 50%;
+    background-color: var(--background1);
+    border-radius: 30px 0 0 30px;
+    a {
+      text-decoration: underline;
+      color: var(--links);
+    }
+    .content > * {
+      margin: 25px;
+    }
+  }
+  /* parte direita */
+  .form-container {
+    max-height: 60%;
+    max-width: 30%;
+    background-color: var(--background);
+    border-radius: 0 30px 30px 0;
+    form * {
+      border: none;
+      }
+    .content h3 a {
+      color: var(--links);
+      text-decoration: underline;
+      font-weight: bolder;
+    }
+  }
+}
+
+/* conteudo da parte direita & esquerda */
+.content {
+  align-content: center;
+  height: 100%;
+  width: 70%;
+  .circular-image {
+    display: flex;
+    width: 70%;
+    align-self: start;
+  }
+  form {
+    padding-top: 20px;
+    width: 100%;
+    * {
+      width: 100%;
+    }
+    input {
+      background-color: transparent;
+      border-bottom: 1px solid black;
+      margin-block: 12px;
+    }
+    input[type="submit"]:hover {
+      scale: 1.01;
+    }
+    input[type="submit"] {
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 60px;
+      background-color: var(--realce);
+      color: white;
+      font-size: 130%;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
+    div {
+      display: flex;
+      div {
+        display: block;
+        margin-inline: 5px;
+        input {
+          background-color: transparent;
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+  h3 {
+    font-weight: normal;
+    text-align: center;
+    width: 80%;
+    a {
+      font-weight: bold;
+    }
+  }
+  h1 {
+    padding-top: 20px;
+  }
+  > * {
+    padding-block: 5px;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: end;
+  padding-inline: 10px;
+  padding-block: 5px;
+  img {
+    width: 300px;
+    margin: 10px;
+  }
+}
+
+/* Para caso precisar alterar o nome do projeto */
+.projecttitle::after {
+  content: "Signage";
+  white-space: nowrap;
+}
+
+.normal-container {
+  border-radius: 15px;
+  background-color: var(--background2);
+  width: 40%;
+  max-height: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    max-width: 70%;
+    text-align: center;
+  }
+  > * {
+    margin: 10px;
+  }
+  img {
+    width: 30%;
+  }
+  h2,
+  p {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 80%;
+  }
+  a {
+    color: var(--links);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  > a {
+    border-radius: 2px;
+    background-color: var(--background);
+    border: 1px solid var(--dark);
+    padding-block: 10px;
+    width: 80%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      width: 30px;
+      aspect-ratio: 1/1;
+      display: block;
+    }
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    > * {
+      margin-block: 5px;
+    }
+    input[type="submit"]:hover {
+      scale: 1.01;
+    }
+    input[type="submit"] {
+      margin-top: 30px;
+      height: 50px;
+      width: 80%;
+
+      padding: 15px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      background-color: var(--realce);
+      font-size: 130%;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+}
+
+.confirm {
+  align-self: center;
+  height: 40%;
+  padding-block: 50px;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input[type="number"] {
+      height: 50px;
+      width: 60%;
+
+      padding: 15px;
+      border: 1px solid grey;
+      border-radius: 2px;
+      background-color: var(--background);
+      color: black;
+      font-size: 130%;
+      cursor: pointer;
+      text-align: center;
+      letter-spacing: 30px;
+      transition: 0.1s ease;
+    }
+  }
+}
+
+.passrecover {
+  width: 40%;
+  form {
+    display: flex;
+    align-items: center;
+    input[type="email"] {
+      
+      height: 50px;
+      width: 80%;
+
+      padding: 15px;
+
+      border: none;
+      border-bottom: 3px solid black;
+      border-radius: 5px;
+
+      background-color: var(--background);
+      color: black;
+      font-size: 130%;
+      cursor: pointer;
+      transition: 0.1s ease;
+    }
+  }
+  .lemb {
+    font-size: 130%;
+  }
+}
+
+.imagem {
+  width: 15%;
+  margin: 10px;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+.onlyresponsive {
+  display: none;
+}
+
+.obrigatorio {
+  color: red;
+  font-size: 80%;
+}

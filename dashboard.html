@@ -14,24 +14,23 @@
       <div class="right-painel">
         <div class="information">
           <div>
-            <img src="images/others/rasperry.webp" />
-            <p><span id="CountDispositivo">X</span> Dispositivos</p>
+            <p><span id="CountDispositivo">20</span> Dispositivos</p>
           </div>
           <div>
-            <img src="images/others/rasperry.webp" />
-            <p><span id="CountDispOnline">X</span> Onlines</p>
+            <p><span id="CountDispOnline">15</span> Onlines</p>
           </div>
           <div>
-            <img src="images/others/rasperry.webp" />
-            <p><span id="CountDispOffline">X</span> Offlines</p>
+            <p><span id="CountDispOffline">5</span> Offlines</p>
           </div>
           <!-- <button id="newdisp">Novo Dipositivo
             <img src="images/plus.svg" />
           </button> -->
-          <button id="newplaylist">Nova Playlist
-            <img src="images/icons/plus.svg" />
-          </button>
-          <button class="disabled">Aplicar</button>
+          <div style="display: flex;">
+            <button id="newplaylist">
+              <img src="images/icons/plus.svg" />Nova Playlist
+            </button>
+            <button class="disabled">Aplicar</button>
+          </div>
         </div>
         <div class="main">
           <p>Todos os Dispositivos</p>
@@ -43,11 +42,6 @@
               <div><p>Playlist</p></div>
               <div><p>#</p></div>
             </div>
-            <!-- 
-            as playlists ficam aqui, copie o "copy-dispositivo"
-            dependendo de quantos dispositivos tiver, um para cada,
-            e remova o ID do elemento ao copia-lo,
-            exemplo logo abaixo-->
             <div class="linha" id="copy-dispositivo">
               <div><p id="name">Lorem</p></div>
               <div><p id="locali">ipsum</p></div>
